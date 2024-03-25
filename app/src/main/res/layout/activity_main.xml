@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_neutral20"
+    tools:context=".MainActivity">
+
+    <fragment
+        android:id="@+id/BottomDisplayFragment"
+        android:name="com.developer27.math.BottomDisplayFragment"
+        android:layout_width="481dp"
+        android:layout_height="504dp"
+        android:layout_marginBottom="92dp"
+        app:layout_constraintBottom_toTopOf="@+id/Copyright"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TopDisplayFragment"
+        tools:layout="@layout/bottomdisplayfragment" />
+
+    <TextView
+        android:id="@+id/Xalxoid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="387dp"
+        android:layout_marginBottom="41dp"
+        android:fontFamily="@font/advent_pro"
+        android:text="Xalxoid"
+        android:textColor="@color/white"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/TopDisplayFragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="146dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="56dp"
+        android:text="2024 © Deniz K. Acikbas. All rights are reserved."
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BottomDisplayFragment" />
+
+    <fragment
+        android:id="@+id/TopDisplayFragment"
+        android:name="com.developer27.math.TopDisplayFragment"
+        android:layout_width="503dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/BottomDisplayFragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Xalxoid"
+        tools:layout="@layout/topdisplayfragment" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
